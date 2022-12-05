@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 NAME="Gustavo Fior"
 EMAIL="gustavo.fior@sbcash.com.br"
@@ -13,7 +13,7 @@ sudo snap remove firefox
 apt update
 apt upgrade -y
 
-echo "############################## Pacotes básicos ##############################" 
+echo "############################## Pacotes básicos ##############################"
 apt install -y curl
 apt install -y fish
 apt install -y htop
@@ -30,14 +30,14 @@ echo "############################## Configurando o Git para o e-mail: $EMAIL ##
 git config --global user.name $NAME
 git config --global user.email $EMAIL
 
-echo "############################## Instalando Gnome Tweaks ##############################" 
+echo "############################## Instalando Gnome Tweaks ##############################"
 wget https://launchpad.net/ubuntu/+archive/primary/+files/gnome-tweak-tool_3.26.2.1-1ubuntu1_all.deb -O gnome-tweak-tool.deb
 dpkg -i gnome-tweak-tool.deb
 apt-get install -f
 apt-get remove gnome-tweak-tool --auto-remove
 apt install gnome-tweaks
 
-echo "############################## Instalando Java ##############################" 
+echo "############################## Instalando Java ##############################"
 apt install openjdk-17-jdk
 apt install openjdk-17-source
 
@@ -68,7 +68,7 @@ sudo apt install ~/discord.deb -y
 echo "############################## Instalando o Remmina ##############################"
 apt install -y remmina
 
-echo "############################## Instalando o IntelliJ ##############################"
+echo "############################## Instalando o Atom ##############################"
 sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
 
@@ -77,8 +77,13 @@ sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/ato
 
 sudo apt install atom
 
+echo "############################## Instalando o IntelliJ ##############################"
+sudo apt update
+add-apt-repository ppa:mmk2410/intellij-idea -y
+apt install intellij-idea-community -y
+
 echo "############################## Instalando o Spotify ##############################"
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 sudo apt-get update && sudo apt-get install spotify-client -y
