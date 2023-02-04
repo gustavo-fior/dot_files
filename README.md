@@ -51,3 +51,5 @@
 **Swapiness** - alterar a configuração de utilização do Swap (60 → 20).
 
 **Customizar Hyper** - alterar a aparência e tema.
+
+**Opcionais** - instalar Canva Desktop, FL Studio e Steam.
