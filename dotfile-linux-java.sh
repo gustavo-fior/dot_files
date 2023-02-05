@@ -103,7 +103,7 @@ apt install ~/google-chrome.deb -y
 
 echo "############################## Instalando o MongoDB Compass ##############################"
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
-dpkg –i mongodb-compass_1.15.1_amd64.deb
+apt install mongodb-compass_1.15.1_amd64.deb -y
 
 echo "############################## Gerando chave SSH para o e-mail: $EMAIL ##############################"
 ssh-keygen -t ed25519 -C $EMAIL
