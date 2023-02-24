@@ -68,23 +68,9 @@ apt install ~/discord.deb -y
 echo "############################## Instalando o Remmina ##############################"
 apt install -y remmina
 
-echo "############################## Instalando o Atom ##############################"
-apt update
-apt install software-properties-common apt-transport-https wget
-
-wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- |  apt-key add -
-add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
-
-apt install atom
-
-echo "############################## Instalando o IntelliJ ##############################"
-apt update
-add-apt-repository ppa:mmk2410/intellij-idea -y
-apt install intellij-idea-community -y
-
 echo "############################## Instalando o Spotify ##############################"
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg |  apt-key add -
-echo "deb http://repository.spotify.com stable non-free" |  tee /etc/apt/sources.list.d/spotify.list
+curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 apt-get update &&  apt-get install spotify-client -y
 
