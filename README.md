@@ -28,7 +28,7 @@
 
 **Hyper** - terminal customizável.
 
-**IntelliJ** - IDE da JetBrains para Java.
+**VS Code** - IDE vice.
 
 **Spotify** - streaming de músicas.
 
@@ -52,4 +52,7 @@
 
 **Customizar Hyper** - alterar a aparência e tema.
 
-**Opcionais** - instalar Canva Desktop, FL Studio e Steam.
+### TODO
+
+**IntelliJ Ultimate** - baixar a versão ultimate do IntelliJ.
+
