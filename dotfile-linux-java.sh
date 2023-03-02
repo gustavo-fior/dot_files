@@ -7,12 +7,6 @@ JRE_HOME_VARIABLE="JRE_HOME=/usr/lib/jvm/java-17-openjdk-amd64/jre"
 SWAP_VALUE="vm.swappiness = 20"
 USER="bancosb"
 
-echo "############################## Removendo Firefox ##############################"
-snap remove firefox
-
-apt update
-apt upgrade -y
-
 echo "############################## Pacotes básicos ##############################"
 apt install -y curl
 apt install -y fish
@@ -120,3 +114,10 @@ echo $SWAP_VALUE >> /etc/sysctl.conf
 sysctl -p
 swapoff -a
 swapon -a
+
+
+echo "############################## Removendo Firefox ##############################"
+snap remove firefox
+
+apt update
+apt upgrade -y
