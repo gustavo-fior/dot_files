@@ -68,6 +68,9 @@ apt install ~/hyper.deb -y
 
 echo "############################## Customizando o Hyper ##############################"
 hyper install hyper-dracula
+hyper i hyper-active-tab
+hyper i hyper-dark-scrollbar
+hyper i hyper-tabs-enhanced
 
 echo "############################## Instalando o Google Chrome ##############################"
 wget -O ~/google-chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
@@ -92,6 +95,9 @@ chsh -s $(which fish)
 
 echo "############################## Settando Hyper como terminal ##############################"
 update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
+
+echo "############################## Settando VS Code como editor de texto ##############################"
+sudo update-alternatives --set editor /usr/bin/code
 
 echo "############################## Instalando o Docker ##############################"
 apt update
