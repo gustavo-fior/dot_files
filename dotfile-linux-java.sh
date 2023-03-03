@@ -63,7 +63,6 @@ apt install ~/hyper.deb -y
 echo "############################## Customizando o Hyper ##############################"
 hyper install hyper-dracula
 hyper i hyper-active-tab
-hyper i hyper-dark-scrollbar
 hyper i hyper-tabs-enhanced
 
 echo "############################## Instalando o Google Chrome ##############################"
