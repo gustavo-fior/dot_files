@@ -1,3 +1,5 @@
+This is in portuguese (:brazil:), you can find the english version [here](README.en.md).
+
 ### Lista de Softwares necessários
 
 **Curl** - ferramenta para comunicação com servidores.
@@ -34,7 +36,7 @@
 
 **Atom** - editor de texto.
 
-**Postman** - ferramenta para teste de API. 
+**Postman** - ferramenta para teste de API.
 
 **Discord** - aplicativo de comunicação.
 
@@ -55,4 +57,3 @@
 ### TODO
 
 **IntelliJ Ultimate** - baixar a versão ultimate do IntelliJ.
-
